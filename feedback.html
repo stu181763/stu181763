@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Storage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>Feedback Storage</h2>
+    <ul id="feedback-list">
+        <!-- Feedback items will be added here -->
+        
+    </ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const feedbackListElement = document.getElementById('feedback-list');
+            const feedbackList = JSON.parse(localStorage.getItem('feedbackList')) || [];
+
+            feedbackList.forEach(feedback => {
+                const feedbackItem = document.createElement('li');
+                feedbackItem.textContent = `Name: ${feedback.name}, Nature Fan: ${feedback.natureFan}, Interests: ${feedback.interests}, Page Rating: ${feedback.pageRating}, Improvement: ${feedback.improvement}, Submitted on: ${feedback.submittedOn}`;
+                feedbackListElement.appendChild(feedbackItem);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9d00f3d804.js" crossorigin="anonymous"></script>
+    <title>Lake District</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <!-- xlarge screen -->
+            <div class="xlarge-screen">
+                <img src="images/banner.jpg" alt="views">
+                <div class="nav-buttons">
+                    <a href="index.html">Home</a>
+                    <a href="page2.html">information</a>
+                    <a href="page3.html">Events</a>
+                    <a href="page4.html">About me</a>
+                    <a href="page5.html">survey</a>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <span class="theme-switch-label"><strong>Theme</strong></span>
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- large screen -->
+            <div class="large-screen">
+                <img src="images/banner.jpg" alt="views">
+                <div class="nav-buttons">
+                    <a href="index.html">Home</a>
+                    <a href="page2.html">information</a>
+                    <a href="page3.html">Events</a>
+                    <a href="page4.html">About me</a>
+                    <a href="page5.html">survey</a>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <span class="theme-switch-label"><strong>Theme</strong></span>
+                    <label class="theme-switch" for="checkbox-large">
+                        <input type="checkbox" id="checkbox-large">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- medium screen -->
+            <div class="medium-screen">
+                <img src="images/banner.jpg" alt="views">
+                <div class="nav-buttons">
+                    <a href="index.html">Home</a>
+                    <a href="page2.html">information</a>
+                    <a href="page3.html">Events</a>
+                    <a href="page4.html">About me</a>
+                    <a href="page5.html">survey</a>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <span class="theme-switch-label"><strong>Theme</strong></span>
+                    <label class="theme-switch" for="checkbox-medium">
+                        <input type="checkbox" id="checkbox-medium">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- small screen -->
+            <div class="small-screen">
+                <img src="images/banner.jpg" alt="views">
+                <div class="small-nav">
+                    <a href="index.html" class="current-page">Home</a>
+                    <a href="#" class="current-page">Survey</a>
+                    <div class="menu-button" onclick="toggleMenu()">Menu ☰</div>
+                </div>
+                <div class="dropdown-menu">
+                    <a href="page2.html">information</a>
+                    <a href="page3.html">Events</a>
+                    <a href="page4.html">About me</a>
+                    <a href="page5.html">Survey</a>
+                    <div class="theme-switch-wrapper">
+                        <span class="theme-switch-label"><strong>Theme</strong></span>
+                        <label class="theme-switch" for="checkbox-small">
+                            <input type="checkbox" id="checkbox-small">
+                            <span class="slider round"></span>
+                        </label>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+	</nav>
+    <div class="feedback-form">
+        <h1>Feedback Form</h1>
+        <form id="feedbackForm" onsubmit="submitFeedback(event)">
+            <div class="form-section">
+                <h2>Are you a nature fan?</h2>
+                <input type="radio" id="nature-yes" name="nature-fan" value="yes">
+                <label for="nature-yes">Yes</label>
+                <input type="radio" id="nature-no" name="nature-fan" value="no">
+                <label for="nature-no">No</label>
+            </div>
+            <div class="form-section">
+                <h2>What is your main interest?</h2>
+                <p>Multi-choice selection</p>
+                <input type="checkbox" id="Trail_hikes" name="interest" value="Trail hikes">
+                <label for="Trail_hikes">Trail hikes</label><br>
+                <input type="checkbox" id="Local_pubs" name="interest" value="Local pubs">
+                <label for="Local_pubs">Local pubs</label><br>
+                <input type="checkbox" id="Water_activities" name="interest" value="Water activities">
+                <label for="Water_activities">Water activities</label><br>
+                <input type="checkbox" id="camping" name="interest" value="camping">
+                <label for="camping">Camping</label>
+            </div>
+            <div class="form-section">
+                <h2>Did you find this page helpful?</h2>
+                <p>1 - not helpful at all<br>10 - very helpful</p>
+                <div class="scale">
+                    <input type="radio" id="s1" name="page-rating" value="1"><label for="s1" class="btn"> 1</label>
+                    <input type="radio" id="s2" name="page-rating" value="2"><label for="s2" class="btn"> 2</label>
+                    <input type="radio" id="s3" name="page-rating" value="3"><label for="s3" class="btn"> 3</label>
+                    <input type="radio" id="s4" name="page-rating" value="4"><label for="s4" class="btn"> 4</label>
+                    <input type="radio" id="s5" name="page-rating" value="5"><label for="s5" class="btn"> 5</label>
+                    <input type="radio" id="s6" name="page-rating" value="6"><label for="s6" class="btn"> 6</label>
+                    <input type="radio" id="s7" name="page-rating" value="7"><label for="s7" class="btn"> 7</label>
+                    <input type="radio" id="s8" name="page-rating" value="8"><label for="s8" class="btn"> 8</label>
+                    <input type="radio" id="s9" name="page-rating" value="9"><label for="s9" class="btn"> 9</label>
+                    <input type="radio" id="s10" name="page-rating" value="10"><label for="s10" class="btn">10</label>
+                </div>
+            </div>
+            <div class="form-section">
+                <h2>How could this website be improved?</h2>
+                <textarea id="improvement" name="improvement"></textarea>
+            </div>
+            <div class="form-section">
+                <label for="user_name"><strong>Please tell us your name</strong></label><br>
+                <span id="user-name-hint" class="input-hint"></span>
+                <input id="user_name" aria-describedby="user-name-hint" name="user_name" type="text">
+            </div>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeSwitch = document.querySelector(".theme-switch input[type='checkbox']");
+            const toggleSwitchSmall = document.querySelector('#checkbox-small');
+            const toggleSwitchMedium = document.querySelector('#checkbox-medium');
+            const toggleSwitchLarge = document.querySelector('#checkbox-large');
+            const currentTheme = localStorage.getItem("theme");
+            const pageLinks = document.querySelectorAll(".nav-buttons a, .small-nav a, .dropdown-menu a");
+
+            // Apply saved theme on load
+            if (currentTheme) {
+                document.documentElement.classList.add(currentTheme);
+                if (currentTheme === "dark-mode") {
+                    themeSwitch.checked = true;
+                    if (toggleSwitchLarge) toggleSwitchLarge.checked = true;
+                    if (toggleSwitchMedium) toggleSwitchMedium.checked = true;
+                    if (toggleSwitchSmall) toggleSwitchSmall.checked = true;
+                }
+            }
+
+            // Theme switch event listener
+            function switchTheme(event) {
+                if (event.target.checked) {
+                    document.documentElement.classList.add("dark-mode");
+                    localStorage.setItem("theme", "dark-mode");
+                } else {
+                    document.documentElement.classList.remove("dark-mode");
+                    localStorage.setItem("theme", "light-mode");
+                }
+            }
+
+            themeSwitch.addEventListener("change", switchTheme);
+            if (toggleSwitchLarge) toggleSwitchLarge.addEventListener("change", switchTheme);
+            if (toggleSwitchMedium) toggleSwitchMedium.addEventListener("change", switchTheme);
+            if (toggleSwitchSmall) toggleSwitchSmall.addEventListener("change", switchTheme);
+
+            // Mark the current page in the navigation bar
+            function setCurrentPage() {
+                pageLinks.forEach(link => {
+                    if (link.href === window.location.href) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
+            }
+            setCurrentPage();
+
+            // Dropdown menu operation
+            const menuButton = document.querySelector(".menu-button");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+
+            if (menuButton) {
+                menuButton.addEventListener("click", function(event) {
+                    event.stopPropagation();
+                    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+                });
+
+                // Close dropdown menu when clicking outside
+                document.addEventListener("click", function(event) {
+                    if (!dropdownMenu.contains(event.target) && event.target !== menuButton) {
+                        dropdownMenu.style.display = "none";
+                    }
+                });
+
+                // Prevent menu button click from propagating to the document
+                dropdownMenu.addEventListener("click", function(event) {
+                    event.stopPropagation();
+                });
+            }
+
+            // Submit feedback function
+            function submitFeedback(event) {
+                event.preventDefault();
+
+                const formData = new FormData(event.target);
+                const formProps = Object.fromEntries(formData.entries());
+                const interests = formData.getAll('interest');
+                const submissionTime = new Date().toLocaleString();
+
+                // Feedback local storage written on feedback.html
+                let feedbackList = JSON.parse(localStorage.getItem('feedbackList')) || [];
+                feedbackList.push({
+                    name: formProps.user_name,
+                    natureFan: formProps['nature-fan'],
+                    interests: interests,
+                    pageRating: formProps['page-rating'],
+                    improvement: formProps.improvement,
+                    submittedOn: submissionTime
+                });
+                localStorage.setItem('feedbackList', JSON.stringify(feedbackList));
+
+                console.log("Feedback submitted:", feedbackList); // Debugging line
+
+                window.location.href = 'thank_you.html';
+            }
+
+            // Attach submit event listener to the feedback form if it exists
+            const feedbackForm = document.querySelector("#feedbackForm");
+            if (feedbackForm) {
+                feedbackForm.addEventListener("submit", submitFeedback);
+            }
+        });
+    </script>
+</body>
+</html>

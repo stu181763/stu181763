@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9d00f3d804.js" crossorigin="anonymous"></script>
+    <title>Lake District</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <!-- xlarge screen -->
+            <div class="xlarge-screen">
+                <img src="images/banner.jpg" alt="views">
+                <div class="nav-buttons">
+                    <a href="index.html">Home</a>
+                    <a href="page2.html">Information</a>
+                    <a href="page3.html">Events</a>
+                    <a href="page4.html">About me</a>
+                    <a href="page5.html">survey</a>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <span class="theme-switch-label"><strong>Theme</strong></span>
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- large screen -->
+            <div class="large-screen">
+                <img src="images/banner.jpg" alt="views">
+                <div class="nav-buttons">
+                    <a href="index.html">Home</a>
+                    <a href="page2.html">Information</a>
+                    <a href="page3.html">Events</a>
+                    <a href="page4.html">About me</a>
+                    <a href="page5.html">survey</a>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <span class="theme-switch-label"><strong>Theme</strong></span>
+                    <label class="theme-switch" for="checkbox-large">
+                        <input type="checkbox" id="checkbox-large">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- medium screen -->
+            <div class="medium-screen">
+                <img src="images/banner.jpg" alt="views">
+                <div class="nav-buttons">
+                    <a href="index.html">Home</a>
+                    <a href="page2.html">Information</a>
+                    <a href="page3.html">Events</a>
+                    <a href="page4.html">About me</a>
+                    <a href="page5.html">survey</a>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <span class="theme-switch-label"><strong>Theme</strong></span>
+                    <label class="theme-switch" for="checkbox-medium">
+                        <input type="checkbox" id="checkbox-medium">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- small screen -->
+            <div class="small-screen">
+                <img src="images/banner.jpg" alt="views">
+                <div class="small-nav">
+                    <a href="index.html" class="current-page">Home</a>
+                    <a href="#" class="current-page">Information</a>
+                    <div class="menu-button" onclick="toggleMenu()">Menu ☰</div>
+                </div>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home</a>
+                    <a href="page2.html">Information</a>
+                    <a href="page3.html">Events</a>
+                    <a href="page4.html">About me</a>
+                    <a href="page5.html">survey</a>
+                    <div class="theme-switch-wrapper">
+                        <span class="theme-switch-label"><strong>Theme</strong></span>
+                        <label class="theme-switch" for="checkbox-small">
+                            <input type="checkbox" id="checkbox-small">
+                            <span class="slider round"></span>
+                        </label>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+	</nav>
+    <div class="framed-section">
+        <h1>Discover the Lake District</h1>
+        <h3>Explore the breathtaking beauty and rich experiences of England's largest National Park.</h3>
+        <h4><strong>Click on the images to get redirected</strong></h4>
+        
+        <div class="borderless-container">
+            <div class="box" id="bar1">
+                <h2 class="icon-tile">Hike Trails in Lake District</h2>
+                <p class="icon-tile">scenic paths from gentle lakeside strolls to challenging mountain hikes.</p>
+                <a href="https://www.google.com/search?q=hike%20trails%20in%20lake%20district"><img src="images/info.jpg" alt="info"></a>
+            </div>
+            <div class="box" id="bar2">
+                <h2 class="icon-tile">Local Pubs in Lake District</h2>
+                <p class="icon-tile">Experience traditional Cumbrian hospitality in charming, historic pubs.</p>
+                <a href="https://www.google.com/search?q=pubs%20and%20inns%20in%20lake%20district"><img src="images/info.jpg" alt="info"></a>
+            </div>
+            <div class="box" id="bar3">
+                <h2 class="icon-tile">Lakes of the Lake District</h2>
+                <p class="icon-tile">Discover the serene beauty of the region's iconic lakes and tarns.</p>
+                <a href="https://www.google.com/search?q=lakes%20in%20lake%20district"><img src="images/info.jpg" alt="info"></a>
+            </div>
+            <div class="box" id="bar4">
+                <h2 class="icon-tile">Camping in Lake District</h2>
+                <p class="icon-tile">Find perfect spots to pitch your tent and connect with nature.</p>
+                <a href="https://www.google.com/search?q=camping%20sites%20in%20lake%20district"><img src="images/info.jpg" alt="info"></a>
+            </div>
+            <div class="box" id="bar5">
+                <h2 class="icon-tile">Peaks of Lake District</h2>
+                <p class="icon-tile">Challenge yourself with climbs to spectacular mountain summits.</p>
+                <a href="https://www.google.com/search?q=mountains%20in%20lake%20district"><img src="images/info.jpg" alt="info"></a>
+            </div>
+            <div class="box" id="bar6">
+                <h2 class="icon-tile">Car Parks in Lake District</h2>
+                <p class="icon-tile">Convenient parking locations for your Lake District adventures.</p>
+                <a href="https://www.google.com/search?q=car%20parks%20in%20lake%20district"><img src="images/info.jpg" alt="info"></a>
+            </div>
+            <div class="box" id="bar7">
+                <h2 class="icon-tile">Restaurants in Lake District</h2>
+                <p class="icon-tile">Savor local flavors and culinary delights across the region.</p>
+                <a href="https://www.google.com/search?q=restaurants%20in%20lake%20district"><img src="images/info.jpg" alt="info"></a>
+            </div>
+            <div class="box" id="bar8">
+                <h2 class="icon-tile">Hotels in Lake District</h2>
+                <p class="icon-tile">Find comfortable accommodations from luxury resorts to cozy B&Bs.</p>
+                <a href="https://www.google.com/search?q=hotels%20in%20lake%20district"><img src="images/info.jpg" alt="info"></a>
+            </div>
+        </div>
+    </div>
+    <!--<div id="mySidenav" class="Sidenav">  // Unused Project
+        <a href="#" id="bar1">Hike Trails<i class="fa-solid fa-person-hiking icon-tile"></i></a>
+        <a href="#" id="bar2">Local Pubs<i class="fa-solid fa-beer-mug-empty icon-tile"></i></a>
+        <a href="#" id="bar3">Lakes<i class="fa-solid fa-water icon-tile"></i></a>
+        <a href="#" id="bar4">Camping<i class="fa-solid fa-campground icon-tile"></i></a>
+        <a href="#" id="bar5">Peaks<i class="fa-solid fa-mountain icon-tile"></i></a>
+        <a href="#" id="bar6">Car Parks<i class="fa-solid fa-square-parking icon-tile"></i></a>
+        <a href="#" id="bar7">Restaurants<i class="fa-solid fa-utensils icon-tile"></i></a>
+        <a href="#" id="bar8">Hotels<i class="fa-solid fa-hotel icon-tile"></i></a>
+    </div>-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeSwitch = document.querySelector(".theme-switch input[type='checkbox']");
+            const toggleSwitchSmall = document.querySelector('#checkbox-small');
+            const toggleSwitchMedium = document.querySelector('#checkbox-medium');
+            const toggleSwitchLarge = document.querySelector('#checkbox-large');
+            const currentTheme = localStorage.getItem("theme");
+            const pageLinks = document.querySelectorAll(".nav-buttons a, .small-nav a, .dropdown-menu a");
+        
+            // Apply saved theme on load
+            if (currentTheme) {
+                document.documentElement.classList.add(currentTheme);
+                if (currentTheme === "dark-mode") {
+                    themeSwitch.checked = true;
+                    if (toggleSwitchLarge) toggleSwitchLarge.checked = true;
+                    if (toggleSwitchMedium) toggleSwitchMedium.checked = true;
+                    if (toggleSwitchSmall) toggleSwitchSmall.checked = true;
+                }
+            }
+        
+            // Theme switch event listener
+            function switchTheme(event) {
+                if (event.target.checked) {
+                    document.documentElement.classList.add("dark-mode");
+                    localStorage.setItem("theme", "dark-mode");
+                } else {
+                    document.documentElement.classList.remove("dark-mode");
+                    localStorage.setItem("theme", "light-mode");
+                }
+            }
+        
+            themeSwitch.addEventListener("change", switchTheme);
+            if (toggleSwitchLarge) toggleSwitchLarge.addEventListener("change", switchTheme);
+            if (toggleSwitchMedium) toggleSwitchMedium.addEventListener("change", switchTheme);
+            if (toggleSwitchSmall) toggleSwitchSmall.addEventListener("change", switchTheme);
+        
+            // Mark the current page in the navigation bar
+            function setCurrentPage() {
+                pageLinks.forEach(link => {
+                    if (link.href === window.location.href) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
+            }
+            setCurrentPage();
+        
+            // Dropdown menu operation
+            const menuButton = document.querySelector(".menu-button");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+        
+            if (menuButton) {
+                menuButton.addEventListener("click", function(event) {
+                    event.stopPropagation();
+                    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+                });
+        
+                // Close dropdown menu when clicking outside
+                document.addEventListener("click", function(event) {
+                    if (!dropdownMenu.contains(event.target) && event.target !== menuButton) {
+                        dropdownMenu.style.display = "none";
+                    }
+                });
+        
+                // Prevent menu button click from propagating to the document
+                dropdownMenu.addEventListener("click", function(event) {
+                    event.stopPropagation();
+                });
+            }
+        });    
+        </script>    
+</body>
+</html>
